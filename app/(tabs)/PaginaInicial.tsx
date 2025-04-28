@@ -32,8 +32,10 @@ const Index = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Sorteio: Cara ou Coroa</Text>
+      <Text>Escolha uma opção abaixo:</Text>
+    
       <CoinPicker selected={escolhaUsuario} onChange={setEscolhaUsuario} />
-      <Button title="Sortear" onPress={sortear} />
+      <Button title="Sortear" onPress={sortear} color="#D4AF37" />
       <CoinImage imagem={imagem} />
       {resultado && <Text style={styles.resultado}>Resultado: {resultado.toUpperCase()}</Text>}
       <View style={styles.stats}>
